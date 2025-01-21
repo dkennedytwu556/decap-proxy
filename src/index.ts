@@ -27,7 +27,7 @@ const handleAuth = async (url: URL, env: Env) => {
 	const oauth2 = createOAuth(env);
 	const authorizationUri = oauth2.authorizeURL({
 		redirect_uri: `https://${url.hostname}/callback?provider=github`,
-		scope: 'public_repo,user',
+		scope: 'TWU556/ts_docusaurus,dkennedytwu556',
 		state: randomBytes(4).toString('hex'),
 	});
 
